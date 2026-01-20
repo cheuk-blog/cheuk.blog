@@ -1,0 +1,190 @@
+/* === Stack 主題自訂樣式 - custom.scss === */
+/* 核心調整：內容置中 + 兩側留更多白邊 */
+
+/* 整體容器 - 加大左右 padding，讓呼吸感更好 */
+.container {
+  max-width: 1400px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  
+  /* 整體往左偏一點 */
+  margin-left: 0;                    /* 取消自動左邊距 */
+  margin-right: auto;
+  max-width: 1340px;                 /* 右邊留更多空間，視覺上偏左 */
+  /* 或直接用 transform */
+  /* transform: translateX(-30px); */
+  
+  @media (max-width: 1023px) {
+    padding-left: 1.2rem;
+    padding-right: 1.2rem;
+    max-width: 100%;
+    margin-left: 0;
+    transform: none;
+  }
+}
+
+/* 文章內容區：限制寬度，讓文字兩側留更多空白（閱讀更舒適） */
+.article-content {
+  max-width: 1000px;
+  margin: 0 auto !important;
+  padding: 0 1.5rem;
+  width: 100%;
+  
+  /* 讓內容稍微偏左：負的 margin-left 或 transform */
+  margin-left: calc(50% - 500px - 40px) !important;  /* 原先置中，再往左移 40px */
+  /* 或者更直觀的寫法： */
+  /* transform: translateX(-40px); */   /* 往左平移 40px，可自行調整 20~60px */
+  
+  @media (max-width: 1023px) {
+    max-width: 100%;
+    padding: 0 1rem;
+    margin-left: 0 !important;          /* 手機版不要偏移 */
+    transform: none !important;
+  }
+}
+/* 確保其他容器不要干擾置中 */
+.wrapper,
+.content-wrapper,
+main#main,
+.article-list,
+.article-container {
+  max-width: 100% !important;
+  width: 100% !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  padding-left: 0 !important;
+  padding-right: 0.8rem !important;
+}
+
+/* 單篇文章加強 */
+.article-container,
+.article-content {
+  max-width: none !important;
+  margin: 0 auto !important;
+  padding: 0 1rem !important;
+}
+
+/* 背景顏色設定 */
+body {
+  background-color: #e8f5e9 !important;
+}
+
+:root {
+  --body-background: #e8f5e9 !important;
+}
+
+.container,
+main#main,
+.article-list,
+.article-container {
+  background-color: transparent !important;
+}
+
+[data-scheme="dark"] body {
+  background-color: #2e7d32 !important;
+}
+
+/* === 頁面載入動畫：平順版（bounce 極輕，過衝只剩 12px） === */
+body {
+  opacity: 0;
+  transform: translateX(-120%);
+  animation: smoothTrainIn 0.8s forwards cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+main#main,
+.article-list,
+.article-container {
+  opacity: 0;
+  transform: translateX(-120%);
+  animation: smoothTrainIn 0.95s 0.08s forwards cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+@keyframes smoothTrainIn {
+  0%   { opacity: 0; transform: translateX(-120%); }
+  60%  { opacity: 0.9; transform: translateX(0); }
+  80%  { transform: translateX(12px); }    // 極輕過衝
+  90%  { transform: translateX(-6px); }    // 輕彈回
+  100% { opacity: 1; transform: translateX(0); }
+}
+
+/* === 頭像 hover 像火車衝出去再彈回 === */
+.site-logo,
+.avatar,
+.profile-avatar {
+  display: block;
+  transition: all 0.6s ease-in-out;
+  cursor: pointer;
+  position: relative;
+
+  &:hover {
+    animation: trainAvatarOutAndBack 1.2s forwards ease-in-out;
+    filter: drop-shadow(0 10px 15px rgba(0,0,0,0.3));
+  }
+}
+
+@keyframes trainAvatarOutAndBack {
+  0%   { transform: translateX(0) scale(1); opacity: 1; }
+  40%  { transform: translateX(120px) scale(1.1); opacity: 0.8; }
+  70%  { transform: translateX(-20px) scale(1.05); opacity: 1; }
+  85%  { transform: translateX(10px) scale(1.02); }
+  100% { transform: translateX(0) scale(1); opacity: 1; }
+}
+
+@media (max-width: 1023px) {
+  .site-logo,
+  .avatar,
+  .profile-avatar {
+    animation: none !important;
+    transform: none !important;
+  }
+}
+
+/* === 文章內圖片：火車車窗風格，但整體變小一點 === */
+.article-content img {
+  max-width: 70% !important;           /* 原 100% → 改 85%，明顯小一圈 */
+  width: 70% !important;               /* 強制使用 85% 寬度 */
+  height: auto !important;             /* 保持比例 */
+  border: 10px solid #2c3e50;          /* 邊框薄一點，配合小圖更協調 */
+  border-radius: 8px;
+  box-shadow:
+    inset 0 0 18px rgba(0,0,0,0.5),    /* 內陰影減弱 */
+    0 8px 25px rgba(0,0,0,0.35);       /* 外陰影變輕 */
+  margin: 2rem auto;                   /* 上下間距稍微減少，避免太鬆散 */
+  display: block;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 30%;
+    background: linear-gradient(to bottom, rgba(255,255,255,0.20), transparent);
+    pointer-events: none;
+  }
+}
+
+/* 手機版再小一點，避免過擠 */
+@media (max-width: 1023px) {
+  .article-content img {
+    max-width: 92% !important;         /* 手機上稍微大一點才清楚 */
+    width: 92% !important;
+    border: 8px solid #2c3e50;
+    border-radius: 6px;
+    margin: 1.5rem auto;
+    box-shadow:
+      inset 0 0 12px rgba(0,0,0,0.5),
+      0 6px 20px rgba(0,0,0,0.3);
+  }
+}
+
+/* 放在 custom.scss 最上面比較保險 */
+:root {
+  font-size: 11px;     /* 原來多數主題是 16px，可試 17～18.5px */
+  /* 或用 108% 這種相對寫法也很好 */
+  /* font-size: 108%; */
+}

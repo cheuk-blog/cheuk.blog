@@ -1,0 +1,109 @@
+{{ $pages := where site.RegularPages "Type" "in" "posts" }}
+{{ $posts := first 5 $pages }}
+{{ if $posts }}
+<div class="embedded-posts">
+  {{ range $index, $element := $posts }}
+  <article class="embedded-post">
+    <header class="post-header">
+      <h2 class="post-title">
+        <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+      </h2>
+      <div class="post-meta">
+        <time datetime="{{ .Date.Format "2006-01-02" }}">
+          {{ .Date.Format "2006年1月2日" }}
+        </time>
+
+        {{ if .Params.tags }}
+        <div class="article-tags">
+          {{ range .Params.tags }}
+          <a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}" class="article-tag">
+            {{ . }}
+          </a>
+          {{ end }}
+        </div>
+        {{ end }}
+      </div>
+    </header>
+    <div class="post-content">
+      {{ .Content }}
+    </div>
+    
+    {{ if lt $index (sub (len $posts) 1) }}
+    <hr class="post-divider">
+    {{ end }}
+  </article>
+  {{ end }}
+</div>
+
+<style>
+.embedded-posts {
+  margin-top: 40px;
+}
+.embedded-post {
+  margin-bottom: 30px;
+  padding-bottom: 20px;
+}
+.post-divider {
+  border: none;
+  height: 2px;
+  background: linear-gradient(90deg,
+    transparent,
+    #ddd 20%,
+    #aaa 50%,
+    #ddd 80%,
+    transparent
+  );
+  margin: 50px 0;
+}
+.post-header {
+  margin-bottom: 20px;
+}
+.post-title {
+  margin: 0 0 10px 0;
+}
+.post-meta {
+  color: #666;
+  font-size: 0.9em;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1.2em;
+}
+
+/* Stack 風格標籤 */
+.article-tags {
+  margin-top: 0.3rem;          /* 與時間稍微拉開一點距離 */
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 0.75rem;
+}
+
+.article-tag {
+  display: inline-block;
+  padding: 0.25rem 0.75rem;
+  font-size: 0.85rem;
+  line-height: 1.4;
+  color: #2c3e50;
+  background-color: #f5f7fa;
+  border-radius: 1rem;
+  text-decoration: none;
+  border: 1px solid #e2e8f0;
+  transition: all 0.2s ease;
+}
+
+
+/* 暗色模式支援（可選） */
+@media (prefers-color-scheme: dark) {
+  .article-tag {
+    color: #e2e8f0;
+    background-color: #2d3748;
+    border-color: #4a5568;
+  }
+  .article-tag:hover {
+    background-color: #4a5568;
+    color: #f7fafc;
+    border-color: #718096;
+  }
+}
+</style>
+{{ end }} 

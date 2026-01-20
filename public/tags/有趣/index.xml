@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>有趣 on Cheuk 的部落格 :p</title>
+        <link>http://localhost:1313/tags/%E6%9C%89%E8%B6%A3/</link>
+        <description>Recent content in 有趣 on Cheuk 的部落格 :p</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>zh-tw</language>
+        <lastBuildDate>Wed, 14 Jan 2026 21:30:48 +0800</lastBuildDate><atom:link href="http://localhost:1313/tags/%E6%9C%89%E8%B6%A3/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>水槍 Emoji</title>
+        <link>http://localhost:1313/posts/water-gun/</link>
+        <pubDate>Wed, 14 Jan 2026 21:30:48 +0800</pubDate>
+        
+        <guid>http://localhost:1313/posts/water-gun/</guid>
+        <description>&lt;p&gt;其實一開始 Blog 的 Emoji 不是 🚂，當初是想要一個左輪手槍的 Emoji ，但找來找去也找不要，最終只找到水槍 🔫，卻給我發現了一個更有趣的故事，有趣到可以出現在高中的閱讀卷上(?)。&lt;/p&gt;
+&lt;p&gt;/// 諷刺解決方案&lt;/p&gt;
+&lt;p&gt;靈感：決定 Blog 的 Emoji 的時候&lt;br&gt;
+延伸閱讀：&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Email&lt;/strong&gt;: &lt;a class=&#34;link&#34; href=&#34;mailto:cheukblog@protonmail.com&#34; &gt;cheukblog@protonmail.com&lt;/a&gt;&lt;/p&gt;
+
+&lt;div class=&#34;train-terminal&#34;&gt;
+  &lt;small&gt;~~已抵達文章的終點站 🚉~~&lt;/small&gt;
+  &lt;div style=&#34;font-size: 0.75em; color: #888; margin-top: 0.3em;&#34;&gt;
+    感謝閱讀！
+  &lt;/div&gt;
+&lt;/div&gt;
+</description>
+        </item>
+        
+    </channel>
+</rss>
