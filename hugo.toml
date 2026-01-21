@@ -60,6 +60,14 @@ cleanDestinationDir = true
     icon = "rss"
     newTab = true
 
+  [[menu.social]]
+  name = "email"
+  url = "mailto:cheukblog@protonmail.com"
+  weight = 60
+  [menu.social.params]
+    icon = "mail"
+    newTab = true
+
 # Sidebar
 [params.sidebar]
   emoji = "🚂"

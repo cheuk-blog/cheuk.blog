@@ -22,6 +22,4 @@ lastmod: 2026-01-20T05:01:59.522Z
 靈感：YT 上的廢片\
 延伸閱讀： [penguinz0 很好笑的 Review](https://www.youtube.com/watch?v=PCRx78Zhj7s)
 
-**Email**: cheukblog@protonmail.com
-
 {{< train-terminal >}}

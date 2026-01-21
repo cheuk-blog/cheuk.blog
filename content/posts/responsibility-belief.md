@@ -13,6 +13,4 @@ lastmod: 2026-01-20T05:02:02.217Z
 靈感：下面的哲學 Podcast\
 延伸閱讀: [真假信念有對錯？ - 廣東話＋字幕](https://www.youtube.com/watch?v=CH7gtcfC5tM)
 
-**Email**: cheukblog@protonmail.com
-
 {{< train-terminal >}}

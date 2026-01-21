@@ -23,6 +23,4 @@ maybe 投稿 to wiwi
 靈感：一個關於旅行哲學的講座\
 延伸閱讀：[為什麼要去旅行？ - 廣東話＋字幕](https://www.youtube.com/watch?v=luMGjQTFzwo)
 
-**Email**: cheukblog@protonmail.com
-
 {{< train-terminal >}}

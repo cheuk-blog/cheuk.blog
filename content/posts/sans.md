@@ -13,6 +13,4 @@ description:
 用了一小時多製作的，好看吧，嘿嘿！
 
 
-**Email**: cheukblog@protonmail.com
-
 {{< train-terminal >}}

@@ -38,6 +38,4 @@ description: 社交媒體是什麼，能食嗎？
 靈感：姐姐的碎碎念、PODCAST\
 延伸閱讀： [JOMO](https://wiwi.blog/blog/jomo)
 
-**Email**: cheukblog@protonmail.com
-
 {{< train-terminal >}}

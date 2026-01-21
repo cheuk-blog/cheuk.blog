@@ -15,6 +15,4 @@ tags:
 靈感：決定 Blog 的 Emoji 的時候\
 延伸閱讀： 
 
-**Email**: cheukblog@protonmail.com
-
 {{< train-terminal >}}
