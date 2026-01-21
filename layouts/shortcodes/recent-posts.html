@@ -1,5 +1,5 @@
 {{ $pages := where site.RegularPages "Type" "in" "posts" }}
-{{ $posts := first 5 $pages }}
+{{ $posts := first 10 $pages }}
 {{ if $posts }}
 <div class="embedded-posts">
   {{ range $index, $element := $posts }}

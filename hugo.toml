@@ -70,3 +70,7 @@ cleanDestinationDir = true
 # Article
 [params.article]
   readingtime = false
+
+# Pagination
+[pagination]
+  pagerSize = 10

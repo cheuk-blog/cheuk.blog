@@ -6,7 +6,7 @@ tags:
   - 學到
 lastmod: 2026-01-20T05:01:59.522Z
 ---
-![alt text](https://upload.wikimedia.org/wikipedia/commons/0/0b/Peering_into_the_Black_Box%2C_Revisited_%2844738147682%29_-_Disassembled_Juicero_Press.jpg)\
+![juicero](images/juicero.jpg)
 三秒鐘，猜猜看上面的被拆卸的神秘機器是什麼。
 
 猜完了嗎？這看起來如此精秘的機器，有那麼多零件和又有電路板，其實就只是個果汁機，對，就是部果汁機，叫 [Juicero](https://en.wikipedia.org/wiki/Juicero)，來自矽谷，而左下角的電路板是為了連接 WI-FI 和專有的 APP ，好高級！最棒的是，當每次想飲果汁的時候，都需要買專屬的果汁包，SCAN 上面的 QR CODE ，「目的」是為了 SCAN 看看果汁包有沒有過期（就只是 SCAN 日期）、是不是自家的果汁包和最重要的，傳送回伺服器，然後讓使用者的體驗更好！
