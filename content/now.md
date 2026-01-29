@@ -12,20 +12,29 @@ lastmod: 2026-01-20
 
 ### 玩玩玩玩玩
 * 努力從 [Touhou 8](https://store.steampowered.com/developer/Mediascape/list/154512) 打到最新一代
-* ~~蔚藍檔案的玩家~~
+* 蔚藍檔案
 * 蘇菲的錬金工房 2
+* TF2
 
 ### 學學學學學
-* 日文
+* 日文\
+    從零開始，二零二六年新目標
 
 ### 看看看看看
 * [好青年荼毒室](https://www.youtube.com/@corrupttheyouthhk)\
     影響我最深的香港哲學團體
+
 * [Wiwi](https://wiwi.blog/)\
     影響我最深的 Blogger / 音樂推廣者
+
+* [魚之樂 ](https://fishandhappiness.blogspot.com)\
+    香港哲學系教授的 Blog
+
 * [達康](https://www.youtube.com/@dacondacome)\
     最好笑的搞笑團體
+
 * [三毛的小說](https://zh.wikipedia.org/wiki/%E4%B8%89%E6%AF%9B_(%E4%BD%9C%E5%AE%B6))\
-    一位台灣的作家 ~~（努力成為文青中）~~    
+    一位台灣的作家 
+
 
 

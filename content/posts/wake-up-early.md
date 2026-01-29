@@ -16,7 +16,6 @@ lastmod: 2026-01-20T05:02:16.737Z
 
 ~~以上就是我的抱怨文~~。
 
-靈感：每次自然睡醒\
 延伸閱讀：[Umarell（喜歡看工地的老人的現象）](https://zh.wikipedia.org/wiki/Umarell)
 
 {{< train-terminal >}}
