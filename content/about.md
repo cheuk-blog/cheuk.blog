@@ -14,7 +14,7 @@ type: page
   maxwidth="400px" 
 >}}
 
-哈囉，你可以叫我 Cheuk ！這裡放我網上學到的知識（什麼都有）和廢文。
+哈囉，你可以叫我 Cheuk! 這裡放我網上學到的知識（什麼都有）和廢文。
 
 頭像：[橘希望](https://zh.moegirl.tw/%E6%A9%98%E5%B8%8C%E6%9C%9B)
 [上面的動畫](https://bluearchive.wiki/wiki/File:Hikari_Nozomi_interact.webm)
