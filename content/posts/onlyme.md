@@ -2,7 +2,7 @@
 title: 只有我這樣嗎？
 date: '2026-02-27T11:00:21+08:00'
 lastmod:
-draft: true
+draft: false
 tags: 
   - 生活
 categories:
